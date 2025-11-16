@@ -25,7 +25,7 @@ Harap cek terlebih dahulu kompabilitasnya.
 | Versi | Mendukung |
 | --- | :---: |
 | JP (DMM) | ✅ |
-| JP (Steam) | ❌ |
+| JP (Steam) | ✅ |
 | KR | ❌ |
 | Global | ✅ |
 
