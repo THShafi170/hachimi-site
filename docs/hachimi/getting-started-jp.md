@@ -16,8 +16,9 @@ DotLocal is currently only used on the DMM version. Play on Steam to bypass it.
 
 1. Download the latest [Installer](https://github.com/kairusds/Hachimi-Edge/releases/latest/download/hachimi_installer.exe) and run it. 
 1. If you used non-edge Hachimi before, click Uninstall first.
+1. Choose your game version from the lower box.
 1. Check that the install directory is correct and change it if needed.
-1. Choose your game version, and click Install.
+1. Click Install.
 <!-- Todo: show how to find the install dir -->
 
 When installing for the first time, the installer might ask to you enable DotLocal DLL redirection. Press OK and it will be enabled for you. **You must RESTART (not shutdown) your computer after enabling it.**
