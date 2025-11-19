@@ -18,7 +18,7 @@ Change the "Physics update mode" setting to "Mode60FPS". This setting is availab
 If you are playing the **Global** version and accidentally installed translations **not specicially made for Global**, you will see corrupted text and images.  
 To fix this, open the Hachimi overlay with the `Right Arrow` key, go to the `Config Editor` and enable `Disable translations`, then restart the game.
 
-If you are playing the **JP** version, update your translations from the menu.
+If you are playing the **JP** version, update your translations from the menu and restart the game.
 Your translation source might also be out of date, especially afer a game update. Just wait for an update in that case.  
 If this doesn't help, you might still be using an old source from the original Hachimi. Open the Menu and run the `First Time Setup` again.  
 <small>If it's close to a game update, it's likely source maintainers will be working on it. Please check if they're already aware before bothering them.</small>  
