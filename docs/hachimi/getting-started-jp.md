@@ -65,6 +65,7 @@ If you have the *unpatched* game installed, you must uninstall it first. The pat
 
 ::: tip
 On Xiaomi devices without HyperOS, try disabling MIUI Optimizations before installing.
+You can also try the Shizuku option further down.
 :::
 
 1. If you used UmaPatcher before, open its settings page and **export the signing key somewhere safe**.
@@ -82,8 +83,30 @@ On Xiaomi devices without HyperOS, try disabling MIUI Optimizations before insta
     :::
 1. Open UmaPatcher, import the exported signing key if needed, and choose **Normal install**. Select the file(s) that you have prepared.
 1. Tap on Patch to start the patching and installation process.
+    - If install fails, you can try the Shizuku installation method below.
 
 ⚠️ You'll need to repeat this process from step 4 whenever the app updates. You do **not** need to uninstall the game to update.
+
+
+<details>
+<summary class="collapsible-header-sub">Patch with Shizuku (alternative, might enable store)</summary>
+
+UmaPatcher Edge can be installed with [Shizuku](https://github.com/RikkaApps/Shizuku/releases).
+This functions something like a "rootless direct install" and *could* circumvent *some* install issues.  
+If you don't see this option, update to the latest version.
+
+Unfamiliar? You will need to enable a few things:
+1. First of all, install [Shizuku](https://github.com/RikkaApps/Shizuku/releases).
+1. Go to `Settings > About phone` and tap `Build number` 5 times, or until you get the popup.
+1. Go back to the main system settings to open `Developer options` or search for it. 
+1. Enable it (`Use developer options`), then find and enable `Wireless debugging`.
+    - You might need to turn `USB debugging` on as well if this doesn't work on its own.
+1. Tap the setting name to open detailed wireless debugging settings.
+1. Select `Pair devices with pairing code` and input the code into the Shizuku notification.
+1. Open Shizuku's main app and start it.
+1. Now Umapatcher Edge's install options should show the Shizuku method as `available`.
+1. When done, it is recommended to stop Shizuku and disable wireless debugging again.
+</details>
 
 <details>
 <summary class="collapsible-header-sub">Patch without uninstall + store updates (requires root)</summary>
