@@ -233,8 +233,12 @@ Alternatively, you may log in to a Cygames ID to link your account data.
 
 ### I/O error: Permission denied (os error 13)
 
-This could happen due to the new scoped storage introduced on Android 10, which makes Hachimi fail to create its data directory. 
-To workaround this, open your file manager, go to Android/media and create a folder named "jp.co.cygames.umamusume". Relaunch the game and the problem should be fixed.
+Due to the new scoped storage introduced in Android 10, Hachimi can fail to create its data directory.  
+1. Close the game. 
+1. Open your file manager and navigate to `Android/media`.
+1. Create a folder named `jp.co.cygames.umamusume` if needed.
+1. Inside the newly created folder, create another folder named `hachimi`.
+1. Relaunch the game.
 
 ### I/O error: File exists (os error 17)
 
@@ -242,9 +246,13 @@ Reboot your device and try launching the game again. If the error persists, ask 
 
 ### Crashing after launch
 
-This might be needed for some devices and emulators:  
-Open your file manager and navigate to `Android/media`. Create a folder named "jp.co.cygames.umamusume". 
-Inside of that folder, create a folder named "hachimi". Finally, download [this config file](https://files.leadrdrk.com/hachimi/android-compat/config.json) and put it inside the "hachimi" folder (make sure that it's called "config.json").
+This might be needed for some devices and emulators.
+1. Follow [os error 13](#i-o-error-permission-denied-os-error-13) first, but don't launch the game yet.
+1. Download [this config file](https://files.leadrdrk.com/hachimi/android-compat/config.json) and put it inside the `hachimi` folder (make sure that it's called `config.json`).
+
+### Missing translation selection during first time setup
+
+See [os error 13](#i-o-error-permission-denied-os-error-13).
 
 ### Mismatched taps
 Open Hachimi's menu -> Config Editor and play with the virtual resolution multiplier to find which value works best.
