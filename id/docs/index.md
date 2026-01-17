@@ -1,16 +1,18 @@
-# Documentation
-Welcome to the Hachimi Edge documentation page!
+# Dokumentasi
+Selamat datang di halaman dokumentasi Hachimi Edge!
 
-::: warning
-This project is inherently against the game's TOS and The Game Developer would likely want it gone if they were ever to learn about it.  
-Use at your own risk, and please share names and links in a responsible manner. The community asks you to particularly refrain from doing so in places where it would attract certain attention from the developers.
+::: Peringatan!
+Peringatan! Proyek ini tidak sesuai dengan Ketentuan layanan/Terms of Service (TOS) dari game. Apabila diketahui oleh developer, besar kemungkinan proyek ini akan dihapus. Gunakan dengan penuh kesadaran akan risiko sendiri. Mohon distribusikan nama dan tautan dengan penuh tanggung jawab, dan hindari membagikannya di ruang publik yang bisa memicu perhatian developer
 :::
 
-## New users
-Check out the [Getting Started](/docs/hachimi/getting-started) page.
+## Memasang Hachimi
+Silakan cek halaman [Memulai](/id/docs/hachimi/getting-started).
 
-## Contributing as a translator
-Check out the [Translation guide](/docs/translation-guide/welcome) and contact [one of the projects](/credits.md).
+## Berkontribusi Sebagai Translator
+Silakan cek halaman [Panduan Translasi](/id/docs/translation-guide/welcome) dan menghubungi [salah satu kontributor](/id/credits.md).
 
-## Creating your own translation source
-Follow one of the existing projects for reference and submit your project [here](https://github.com/UmaTL/hachimi-meta).
+## Buat Sumber Translasimu Sendiri
+Ikuti salah satu proyek yang sudah ada sebagai referensi dan ajukan proyekmu [disini](https://github.com/UmaTL/hachimi-meta).
+
+## Berkontribusi Ke Hachimi Edge
+Silakan cek [Repositori GitHub](https://github.com/kairusds/Hachimi-Edge).

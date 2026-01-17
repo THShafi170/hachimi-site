@@ -6,7 +6,7 @@ File konfigurasi bisa ditemukan di lokasi berikut:
 - Windows: `[Folder instalasi game]\hachimi\config.json`
 - Android: `/sdcard/Android/media/jp.co.cygames.umamusume/hachimi/config.json`
 
-**Catatan:** Beberapa opsi tidak tersedia di Config Editor dan harus ditambahkan secara manual.
+**Catatan:** Beberapa opsi tidak tersedia di Editor konfig dan harus ditambahkan secara manual.
 
 - `debug_mode`: Menentukan apakah mode debug diaktifkan atau tidak. Saat ini hanya mengaktifkan/menonaktifkan debug logging.
 - `translator_mode`: Ditujukan untuk penerjemah. Mencatat string UI yang belum diterjemahkan ke konsol dan mengaktifkan beberapa fitur lain yang berguna untuk penerjemah.
@@ -14,7 +14,7 @@ File konfigurasi bisa ditemukan di lokasi berikut:
 - `localized_data_dir`: Direktori yang berisi data terlokalisasi. Harus memiliki file konfigurasi data lokal.
 - `target_fps`: FPS target dari game. Jika tidak diatur, Hachimi tidak akan mencoba mengganti FPS game. Tidak berpengaruh jika `vsync_count` diatur.
 - `open_browser_url`: URL default yang dibuka saat meluncurkan browser dalam game dari GUI. Default: `https://www.google.com/`
-- `virtual_res_mult`: Pengali resolusi virtual. Jika perangkatmu mampu, nilai 1.5 atau 2 bagus; lebih tinggi dari itu mungkin berlebihan. Bisa diterapkan tanpa menutup game dengan melakukan "Soft restart".
+- `virtual_res_mult`: Pengali resolusi virtual. Jika perangkatmu mampu, nilai 1.5 atau 2 bagus; lebih tinggi dari itu mungkin berlebihan. Bisa diterapkan tanpa menutup game dengan melakukan "Restart ringan".
 - `translation_repo_index`: URL indeks repo terjemahan. Digunakan oleh updater terjemahan.
 - `skip_first_time_setup`: Menentukan apakah melewati setup pertama saat startup atau tidak. Secara otomatis diset `true` setelah dialog setup pertama ditutup.
 - `disable_auto_update_check`: Menonaktifkan pemeriksaan update otomatis saat startup.
@@ -25,7 +25,7 @@ File konfigurasi bisa ditemukan di lokasi berikut:
 - `story_tcps_multiplier`: Pengali kecepatan teks cerita ("jumlah karakter per detik seperti mesin ketik"). Default: `1.0`
 - `enable_ipc`: Mengaktifkan server komunikasi antar-proses HTTP yang memungkinkan program lain mengontrol game. Ditujukan untuk digunakan dengan alat terjemahan.
 - `ipc_listen_all`: Menerima perintah IPC dari perangkat lain di jaringan. **Jangan aktifkan opsi ini jika kamu tidak membutuhkannya.**
-- `force_allow_dynamic_camera`: Memaksa game untuk mengizinkan pemilihan kamera dinamis (kamera POV, kamera joki, dll.) di semua jenis balapan.
+- `force_allow_dynamic_camera`: Memaksa game untuk mengizinkan pemilihan kamera dinamis (POV) di semua jenis balapan.
 - `live_theater_allow_same_chara`: Memaksa game untuk mengizinkan memilih karakter yang sama berkali-kali untuk formasi konser live. Juga menonaktifkan penyimpanan formasi otomatis. **Jangan mencoba menyimpan formasi yang diduplikasi secara manual.**
 - `sugoi_url`: URL ke Sugoi Offline Translator atau server terjemahan kompatibel untuk terjemahan otomatis. Tidak perlu diatur jika kamu menggunakan setup Sugoi standar. Default: `http://127.0.0.1:14366`
 - `auto_translate_stories`: Memungkinkan penerjemahan cerita melalui penerjemah otomatis.

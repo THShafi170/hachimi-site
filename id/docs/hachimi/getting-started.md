@@ -1,4 +1,4 @@
-# Cara Memulai
+# Memulai
 <small>
 
 Lihat halaman ini dari berbagai bahasa:
@@ -7,19 +7,18 @@ Lihat halaman ini dari berbagai bahasa:
 
 </small>
 
-## ⚠️ Tolong jangan sebar tautan laman ini atau repo Github nya.
-Kami paham bahwa kamu ingin membantu seseorang mengunduh Hachimi dan memiliki pengalaman game yang layak. Walau begitu, proyek ini secara bertentangan melanggar Ketentuan Layanan (TOS) permainan dan pengembang permainan pasti ingin menghapusnya jika mereka mengetahui hal tersebut.
+::: **PERINGATAN!**
+Proyek ini tidak sesuai dengan Ketentuan layanan/Terms of Service (TOS) dari game. Gunakan dengan penuh kesadaran akan risiko sendiri. Mohon distribusikan nama dan tautan dengan penuh tanggung jawab, dan hindari membagikannya di ruang publik yang bisa memicu perhatian developer.
+:::
 
-Walau kami memperbolehkan kamu membagikannya melalui pesan pribadi atau grup pesan yang pribadi, kami dengan hormat meminta agar kamu tidak membagikan tautan proyek ini di situs web yang dapat diakses publik, atau lainnya.
+::: **PERHATIAN!**
+Sudah menggunakan Hachimi? kamu perlu beralih ke Hachimi Edge karena pembaruan besar game pada 24/09/2025 (JP) dan 11/11/2025 (Global)
+:::
 
-Terserah kamu jika ingin membagikannya dan merusak pengalaman puluhan pengguna Hachimi.
-
-### Jika kamu ingin tetap membagikannya
-Lakukan sesukamu, tapi kami meminta secara hormat melabeli game ini menjadi "UM:PD" atau "Game Kuda" ketimbang nama asli dari gamenya, untuk mencegah terdeteksi di mesin pencarian.
 
 ## Kompabilitas
 
-Harap cek terlebih dahulu kompabilitasnya.
+Harap cek kompabilitasnya dahulu.
 
 ### Windows
 | Versi | Mendukung |
@@ -28,10 +27,11 @@ Harap cek terlebih dahulu kompabilitasnya.
 | JP (Steam) | ✅ |
 | KR | ❌ |
 | Global | ✅ |
+| Emulator (semua _region_) | ❌ |
 
 ### Android
 
-| Version | Unduh Normal | Unduh Langsung | Zygisk |
+| Versi | Pasang Normal | Pasang Langsung | Zygisk |
 | --- | :---: | :---: | :---: |
 | JP | ✅ | ✅ | ✅ |
 | KR | ❌ | ❌ | ❌ |
@@ -40,142 +40,189 @@ Harap cek terlebih dahulu kompabilitasnya.
 | CN | ⚠️ | ⚠️ | ✅ |
 | Global | ⚠️ | ⚠️ | ❔ |
 - ✅ - Sangat mendukung.
-- ⚠️ - Bekerja, tapi ada beberapa kendala eksternal (contoh: Trigger AC).
-- ❔ - Belum Coba. Mungkin bekerja, tapi tidak dihitung.
+- ⚠️ - Bekerja, tetapi menyebabkan game gagal berjalan karena faktor eksternal.
+- ❔ - Belum dicoba. Mungkin bekerja, tapi tidak dihitung.
 - ❌ - Tidak mendukung.
 
-## Instalasi
+## Petunjuk Instalasi
 
-Proses instalasi berbeda-beda tergantung pada versi permainan. Klik salah satu dari opsi berikut untuk melihatnya.
+Ikuti panduan sesuai dengan perangkatmu dibawah, kemudian lanjutkan dengan [Setup Pertama Kali](#setup-pertama-kali).
 
-<details><summary style="font-size: 20px; font-weight: 600;">JP</summary>
+<details>
+<summary style="font-size: 20px; font-weight: 600;">JP</summary>
 
 ### Windows
 
-Per v0.13.0, Hachimi saat ini mendukung dua metode pemuatan dengan prosedur instalasi yang berbeda. **Pilih hanya satu metode, dan gunakan installer atau lakukan secara manual, JANGAN gunakan beberapa hal sekaligus.**
-
-#### Metode 1: DotLocal DLL redirection (UnityPlayer.dll) (direkomendasikan)
-
-::: perhatian
-Beberapa anti-cheat seperti Vanguard tidak suka melihat pengalihan DLL di sistem kamu, bahkan jika itu tidak secara langsung memengaruhi game yang dilindunginya. Nonaktifkan pengalihan DLL setiap kali kamu ingin memainkan game yang menggunakan Vanguard atau anti-cheat lain yang memeriksa hal yang sama.
+::: PERINGATAN!
+Proses instalasi DMM menggunakan pengalihan DotLocal DLL.
+Hal ini tidak kompatibel dengan beberapa sistem _anti‑cheat_ (seperti Vanguard yang digunakan di LoL/Valorant). Kamu harus menonaktifkannya setiap kali ingin memainkan game yang terdampak.
+[Berikut ini](https://github.com/LeadRDRK/DotLocalToggle/releases) adalah program untuk menyalakan/mematikan fitur tersebut dengan cepat. Jalankan hingga muncul pesan pengalihan DLL telah dinonaktifkan, lalu _restart_ komputer kamu. Steam tidak terpengaruh.
 :::
 
-::: info
-Game tidak bisa diluncurkan setelah instalasi? Navigasi ke folder instalasi game, klik kanan pada file .exe game, buka Properties, dan aktifkan "Disable fullscreen optimizations" di tab Compatibility.
+1. Unduh [Installer terbaru](https://github.com/kairusds/Hachimi-Edge/releases/latest/download/hachimi_installer.exe) dan jalankan. 
+1. Jika kamu menggunakan Hachimi non-edge sebelumnya, harap _Uninstall_ dahulu.
+1. Pilih versi game kamu di kotak bawah.
+1. Periksa apakah direktori instalasi sudah benar dan ubah jika diperlukan.
+1. Klik _Install_.
+<!-- Todo: show how to find the install dir -->
+
+Saat instalasi pertama kali, Installer mungkin akan meminta kamu untuk mengaktifkan pengalihan DotLocal DLL. Tekan OK dan fitur tersebut akan diaktifkan. **Kamu harus melakukan _RESTART_ (bukan _shutdown_) komputer setelah mengaktifkannya.**
+
+<details>
+<summary class="collapsible-header-sub">Install manual</summary>
+
+::: Tip
+Tambahkan ekstensi **file** (`.exe`, `.dll`) hanya saat kamu melihatnya di file asli. Jika tidak terlihat, berarti Windows disetel untuk menyembunyikannya, dan hasil ganti nama akan berakhir dengan `.exe.exe`, sehingga game menjadi rusak. Tidak berlaku untuk folder
 :::
 
-- **Menggunakan installer:** Unduh `hachimi_installer.exe` terbaru dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi/releases). Jalankan, **pilih "UnityPlayer.dll" sebagai targetnya** dan klik untuk install.
-
-Saat pertama kali unduh, installer mungkin akan meminta kamu untuk mengaktifkan DotLocal DLL redirection. Tekan OK dan itu akan diaktifkan untuk kamu. **Kamu perlu restart komputer setelah mengaktifkannya agar bekerja.**
-
-- **Secara Manual**
-1. Merujuk pada bagian "Configure the registry" di [this article](https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-redirection#optional-configure-the-registry) untuk mengaktifkan pengalihan DLL. Restart komputer kamu setelah selesai.
-2. Unduh `hachimi.dll` terbaru dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi/releases).
-3. Di folder instalasi game, buat folder baru bernama `umamusume.exe.local` dan pindahkan file DLL yang diunduh ke sana. Ganti namanya menjadi `UnityPlayer.dll`.
-4. Unduh `cellar.dll` terbaru dari [Halaman Rilis Cellar](https://github.com/Hachimi-Hachimi/Cellar/releases).
-5. Pindahkan ke `umamusume.exe.local` dan ganti namanya menjadi `apphelp.dll`.
-
-::: info
-Tips untuk orang yang ingin bermain LoL/Valorant: kamu perlu menonaktifkan pengalihan DLL setiap kali kamu ingin memainkan game tersebut. kamu dapat menggunakan program ini untuk mengaktifkan/menonaktifkannya dengan cepat: https://github.com/LeadRDRK/DotLocalToggle/releases. Jalankan hingga muncul pesan bahwa pengalihan DLL telah dinonaktifkan dan restart komputer kamu.
+::: Tip
+Panduan ini berdasarkan versi DMM. Jika kamu menggunakan Steam, ganti `umamusume.exe` dengan `UmamusumePrettyDerby.exe` dengan langkah‑langkah di bawah.
 :::
 
-#### Metode 2: Plugin shimming (cri_mana_vpx.dll)
+1. Lihat bagian "Configure the registry" pada [artikel ini](https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-redirection#optional-configure-the-registry) untuk mengaktifkan pengalihan DLL. _Restart_ komputer kamu setelah selesai.
+2. Unduh `hachimi.dll` terbaru di [Laman rilis](https://github.com/kairusds/Hachimi-Edge/releases).
+3. Di folder instalasi game, buat folder baru bernama `umamusume.exe.local` dan pindahkan file DLL yang telah diunduh ke sana. Ubah namanya menjadi `UnityPlayer.dll`
+4. Unduh `cellar.dll` terbaru di [laman rilis Cellar](https://github.com/Hachimi-Hachimi/Cellar/releases).
+5. Pindahkan ke `umamusume.exe.local` dan ubah namanya menjadi `apphelp.dll`.
+</details>
+<details>
+<summary class="collapsible-header-sub">Migrasi dari metode plugin shimming yang sudah usang.</summary>
 
-::: perhatian
-Metode ini tidak lagi berfungsi setelah pembaruan terbaru. Harap ikuti panduan di bawah ini untuk bermigrasi ke metode 1.
+Kamu harus menghapus Shinmy dengan bersih terlebih dahulu; pastikan program tersebut tidak sedang berjalan saat kamu menghapusnya karena bisa bertahan hingga 30 detik setelah DMM ditutup dan memulihkan dirinya sendiri. **Cara termudah adalah dengan menggunakan installer** (yang juga berfungsi sebagai uninstaller), sehingga semuanya akan dibersihkan dengan benar.
+
+Setelah itu, kamu bisa menghapus Hachimi seperti biasa.
+</details>
+
+## Android
+
+::: peringatan
+Melakukan patch pada game di Android akan menonaktifkan Google Play Store untuk game tersebut, termasuk pembelian. Kamu bisa mencoba menggunakan toko milik pengembang game.
 :::
-
-#### Migrasi dari metode 2 ke metode 1
-Kamu mungkin ingin beralih dari metode 2 ke metode 1, namun proses ini tidak terlalu mudah dibandingkan sebaliknya (untuk 1 -> 2, cukup hapus instalasi dan instal kembali). 
-
-Kamu perlu menghapus instalasi Shinmy secara bersih terlebih dahulu; pastikan Shinmy tidak berjalan saat kamu menghapusnya karena ia dapat bertahan hingga 30 detik setelah DMM ditutup dan dapat memulihkan dirinya sendiri. `Cara termudah untuk melakukan ini adalah dengan menggunakan penginstal` (yang juga berfungsi sebagai penghapus instalasi), itu akan membersihkan semuanya dengan benar untuk kamu.
-
-Setelah itu, kamu bisa menghapus instalasi Hachimi seperti biasa.
-
-### Android
-
-Cara termudah untuk install [UmaPatcher](https://github.com/LeadRDRK/UmaPatcher) yang akan memodifikasi APK kamu. Disarankan agar kamu tidak menginstal game terlebih dahulu sebelum menggunakan ini.
 
 ::: bahaya
-Jika kamu sudah menginstal game, kamu harus menghapus instalasinya sebelum menginstal versi yang ditambal untuk pertama kalinya. kamu dapat memperbarui game nanti tanpa menghapusnya dengan menginstal versi lain yang ditambal.
+Jika kamu sudah memiliki data simpanan, pastikan kamu telah menyiapkan Data Link atau Cygames ID sebelum menginstal versi patch untuk mentransfer progres kamu. Login melalui akun Google Play dinonaktifkan
+:::
+
+::: bahaya
+Jika kamu memiliki game belum di patch yang terpasang, kamu harus menghapusnya terlebih dahulu. game yang sudah dipatch nantinya bisa diperbarui tanpa perlu dihapus.
+:::
+
+::: tip
+Pada perangkat Xiaomi tanpa HyperOS, coba nonaktifkan MIUI Optimizations sebelum melakukan instalasi. Kamu juga bisa mencoba opsi Shizuku yang ada lebih bawah.
+:::
+
+
+1. Jika kamu menggunakan UmaPatcher, buka laman pengaturan dan **ekspor _signing key_ di tempat yang aman**.
+1. Uninstall game asli **jika kamu belum pernah melakukan patch sebelumnya menggunakan salah satu versi UmaPatcher**.
+1. Unduh dan install [UmaPatcher Edge](https://github.com/kairusds/UmaPatcher-Edge/releases/latest/download/app-release.apk) versi terbaru.
+1. Siapkan paket instalasi untuk game yang berupa:
+    - **_Split APK files_:**
+    This is currently only used by the JP version.
+    Sebuah file APK dasar dan salah satu dari _split config_ APK (config.arm64_v8a, config.armeabi-v7a, dll.), pilih hanya satu _split config_ yang sesuai dengan perangkat kamu. Saat ini hanya digunakan oleh versi JP.
+    - **_Single APK file_**: Sebuah file APK lengkap (fat APK).
+    - **_XAPK file_**: Sebuah file ZIP yang berisi split APK, dengan ekstensi diganti menjadi XAPK.
+    ::: peringatan
+    Jangan mengambil APK dari APKPure, karena bisa menimbulkan masalah. Sumber yang direkomendasikan adalah [Qoopy](https://qoopy.leadrdrk.com/), gunakan ID 6172.
+    :::
+1. Buka UmaPatcher, impor _signing key_ yang telah di ekspor jika diperlukan, dan pilih **_Normal install_**. Pilih file yang telah kamu siapkan.
+1. Ketuk _Patch_ untuk memulai _patching_ dan proses instalasi.
+    - Jika instalasi gagal, kamu bisa mencoba metode install dengan Shizuku di bawah.
+
+⚠️ Kamu perlu mengulangi proses ini mulai dari langkah 4 setiap kali aplikasi diperbarui. Kamu **tidak perlu** menghapus game untuk melakukan pembaruan.
+
+<details>
+<summary class="collapsible-header-sub">Patch dengan Shizuku (alternatif, mungkin mengaktifkan toko)</summary>
+
+UmaPatcher Edge bisa diinstal dengan [Shizuku](https://github.com/RikkaApps/Shizuku/releases).
+Fitur ini berfungsi mirip dengan “_rootless direct install_” dan bisa mengatasi beberapa masalah instalasi. Jika kamu tidak melihat opsi ini, perbarui ke versi terbaru.
+
+Tidak terbiasa? kamu perlu mengaktifkan beberapa hal:
+1. Pertama-tama, install [Shizuku](https://github.com/RikkaApps/Shizuku/releases).
+1. Pergi ke `Pengaturan > Tentang ponsel` dan ketuk `Nomor versi (Build number)` 5 kali, sampai mendapatkan popup.
+1. Cari dan buka pengaturan sistem `Opsi pengembang/developer`. 
+1. Nyalakan (`Opsi pengembang/developer`), kemudian cari dan nyalakan `Debugging nirkabel/wireless`.
+    - Kamu mungkin perlu mengaktifkan `USB debugging` jika ini tidak berfungsi dengan sendirinya.
+1. Ketuk nama pengaturan untuk membuka pengaturan debugging nirkabel secara detail.
+1. Pilih `Sambungkan dengan kode penghubung` dan masukan kode ke notifikasi Shizuku.
+1. Buka Shizuku dan nyalakan.
+1. Sekarang opsi instalasi Umapatcher Edge akan menampilkan metode Shizuku sebagai `available`.
+1. Setelah selesai, disarankan untuk menghentikan Shizuku dan menonaktifkan debugging nirkabel kembali.
+</details>
+
+<details>
+<summary class="collapsible-header-sub">Patch tanpa uninstall + pembaruan toko (butuh root)</summary>
+
+UmaPatcher menyertakan opsi instalasi root yang tidak mengharuskan kamu menghapus game atau mengotak-atik APK, sehingga kamu bisa memperbarui secara normal dari toko aplikasi mana pun.
+
+Dengan game terpasang, ketuk kartu di bagian atas layar utama patcher untuk memilih aplikasi yang ingin kamu patch (jika diperlukan). Lalu pilih “_Direct install_” sebagai metode instalasi dan ketuk Patch. Tidak diperlukan file input.
+
+Kamu perlu melakukan patch ulang game dengan UmaPatcher setiap kali game diperbarui.
+</details>
+
+<details>
+<summary class="collapsible-header-sub">Install Manual (tidak disarankan)</summary>
+
+1. Bangun/_Build_ atau unduh _library_ yang sudah dibangun dari [halaman Rilis](https://github.com/kairusds/Hachimi-Edge/releases).
+2. Ekstrak file dari APK game. Kamu mungkin akan menggunakan [apktool](https://apktool.org/) for this.
+3. Ubah nama file `libmain.so` di setiap folder di dalam `lib` ke `libmain_orig.so`.
+4. Salin _library_ proxy ke folder yang sesuai. (misal `libmain-arm64-v8a.so` ke `lib/arm64-v8a`). Ubah nama mereka ke `libmain.so`.
+5. _Build_ file APK dan install.
+</details>
+
+</details>
+
+<details>
+<summary style="font-size: 20px; font-weight: 600;">Global / TW / CN</summary>
+Ikuti panduan untuk platform kamu di bawah ini, lalu lanjutkan dengan Setup pertama kali.
+
+## Windows
+
+Sejak 2025/11/11, Semua versi menggunakan rilis Hachimi Edge yang sama.
+
+1. Jika kamu memiliki versi lama khusus `Hachimi 2020` yang terpasang, hapus instalasinya terlebih dahulu.
+    - Kamu bisa menggunakan installer asli, atau mengambilnya [disini](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases/download/v0.14.0-2deadd3/hachimi_installer.exe).
+1. Ikuti Panduan untuk JP dengan sedikit penyesuaian:
+    - Pilih versi untuk Steam di menu _dropdown_.
+    - Arahkan installer ke lokasi instalasi global 
+    
+    (Default: `C:\Program Files (x86)\Steam\steamapps\common\UmamusumePrettyDerby`).
+
+<details>
+<summary class="collapsible-header-sub">Install manual</summary>
+Instalasi manual juga mudah, jika kamu lebih suka mengalami masalah.
+</details>
+
+## Android
+
+::: peringatan
+Hachimi tidak bisa digunakan dengan versi ini tanpa root. Mengingat versi global di Android tidak didukung.
 :::
 
 ::: danger
-Jangan ambil APK dari APKPure, karena dapat menyebabkan masalah.
-:::
-
-::: info
-Jika kamu sudah memiliki data simpanan untuk game yang tidak ditambal, buat kata sandi Data Link sebelum menginstal versi game yang ditambal jika kamu belum melakukannya.
-kamu tidak dapat masuk ke versi game yang ditambal menggunakan akun Google Play kamu, dan menggunakan kata sandi Data Link adalah cara termudah untuk mentransfer kemajuan kamu.
-Sebagai alternatif, kamu dapat menggunakan ID Cygames untuk menyinkronkan data akun kamu.
-:::
-
-
-1. Download dan unduh versi terbaru UmaPatcher dari [Halaman Rilis](https://github.com/LeadRDRK/UmaPatcher/releases).
-2. Siapkan paket instalasi untuk game, yang bisa berupa:
-    - **Split APK files:** Sebuah file APK utama (base APK) dan salah satu file split config APK (config.arm64_v8a, config.armeabi-v7a, dll.),  
-      pilih hanya satu split config yang sesuai dengan perangkatmu.  
-      Saat ini hanya digunakan oleh versi JP.
-    - **Single APK file**: File APK penuh.
-    - **XAPK file**: File ZIP yang berisi split APK files (ekstensinya diubah menjadi XAPK).
-   
-   Split APK files atau file XAPK bisa diunduh dari [Qoopy](https://qoopy.leadrdrk.com/), gunakan ID 6172.
-3. Buka UmaPatcher dan pilih "Normal install". Pilih file yang sudah kamu siapkan.
-4. Tekan Patch untuk memulai proses patching dan instalasi.
-
-Kamu harus mengulangi proses dari langkah 2 lagi setiap kali aplikasi mendapatkan update.
-
-#### Untuk pengguna root
-UmaPatcher menyertakan opsi instalasi khusus root yang tidak mengharuskanmu menghapus game dan memungkinkan game untuk diperbarui secara normal dari app store mana pun.
-
-Dengan game sudah terinstal, ketuk kartu di bagian atas layar utama untuk memilih aplikasi yang ingin kamu patch (jika perlu).  
-Lalu pilih "Direct install" sebagai metode instalasi dan tekan Patch. Tidak perlu memasukkan file apa pun.
-
-Kamu harus menginstalnya kembali setiap kali aplikasi mendapatkan update.
-
-#### Secara Manual
-1. Build atau unduh library prebuilt dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi/releases).
-2. Ekstrak file APK dari game. Kamu bisa menggunakan [apktool](https://apktool.org/) untuk ini.
-3. Ganti nama file `libmain.so` di setiap folder dalam `lib` menjadi `libmain_orig.so`.
-4. Salin library proxy ke folder yang sesuai (misalnya `libmain-arm64-v8a.so` masuk ke `lib/arm64-v8a`).  
-   Lalu ubah namanya menjadi `libmain.so`.
-5. Build kembali file APK dan instal.
-
-</details>
-
-<details><summary style="font-size: 20px; font-weight: 600;">Global / TW / CN</summary>
-
-### Windows
-
-- **Menggunakan installer:** Unduh `hachimi_installer.exe` terbaru dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases). Jalankan dan klik Install.  
-  Tidak perlu mengubah opsi apa pun jika kamu tidak tahu artinya.
-- **Secara manual:** Unduh `hachimi.dll` terbaru dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases) dan letakkan di folder instalasi game.  
-  Ganti namanya menjadi `winhttp.dll`, `version.dll`, atau `opengl32.dll`.
-
-::: tip
-Jika kamu tidak tertarik menggunakan fitur terjemahan Hachimi, kamu bisa menonaktifkannya dengan menutup jendela First-Time Setup ketika pertama kali meluncurkan game dengan Hachimi terinstal.  
-Menginstal terjemahan pada versi global game bisa menyebabkan tekstur rusak.  
-Hal ini bisa diatasi dengan menonaktifkan terjemahan (di **Config Editor > Gameplay**), lalu restart game.
-:::
-
-### Android
-
-::: warning
-Hachimi tidak bisa digunakan di versi ini tanpa root.
+Sejak 2025/11/11, Versi Hachimi yang ditautkan di bawah kemungkinan besar akan gagal. Sebagai gantinya gunakan file dari [rilis Edge terbaru](https://github.com/kairusds/Hachimi-Edge/releases/latest). Status dukungan saat ini tidak pasti.
 :::
 
 #### Zygisk
-Unduh file zip Zygisk terbaru dari [Halaman Rilis](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases) dan instal menggunakan Magisk atau KernelSU (dengan Zygisk Next).
+Unduh Zygisk zip terbaru dari [laman rilis](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases) dan install menggunakan Magisk atau KernelSU (dengan Zygisk).
 
 </details>
+
 
 ## Setup Pertama Kali
 Saat meluncurkan game untuk pertama kali setelah menginstal Hachimi, kamu akan disambut dengan dialog berikut:
 
-![First Time Setup](/assets/first-time-setup.jpg)
+![First Time Setup](/assets/id/first-time-setup.webp)
 
-*Jika kamu tidak melihatnya, berarti Hachimi belum terinstal dengan benar. Silakan periksa panduan instalasi dan coba lagi.*
+::: Peringatan
+Jika kamu tidak melihatnya setelah memperbarui ke Edge untuk pertama kali, buka dari menu Hachimi dan selesaikan proses pengaturannya. Jika tidak, terjemahan akan menjadi usang dan bisa menyebabkan masalah tekstur yang rusak
+:::
 
-Ketuk **Next** dan pilih repo terjemahan yang kamu inginkan, lalu ketuk **Done** untuk menyimpan konfigurasi dan memulai pemeriksaan update.
+::: Info
+Jika kamu tetap tidak melihatnya, berarti Hachimi tidak terpasang dengan benar. Harap baca panduan instalasi dengan seksama dan coba lagi, atau lihat di [Permasalahan](/id/docs/hachimi/troubleshooting.md)
+:::
 
-Hachimi sekarang akan meminta kamu untuk mengunduh update terjemahan baru, klik **Yes** untuk mulai mengunduh file terjemahan.
+Ketuk `Lanjut` dan pilih sumber terjemahan yang kamu inginkan, lalu ketuk `simpan` untuk menyimpan konfigurasi dan memulai pemeriksaan pembaruan.
+
+Jika dipilih, Hachimi akan meminta kamu untuk mengunduh pembaruan terjemahan baru. Klik `Ya` untuk mulai mengunduh file.
+
+Kamu bisa kembali ke dialog ini nanti untuk mengubah sumber terjemahan melalui menu Hachimi.

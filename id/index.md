@@ -4,57 +4,62 @@ layout: home
 
 hero:
   name: "Hachimi Edge"
-  text: "UM:PD translation and enhancement mod"
-  tagline: For Windows and Android.
+  text: "Mod terjemahan dan peningkatan game UM:PD"
+  tagline: Untuk Windows dan Android.
   image:
     src: /assets/logo.png
     alt: Hachimi
   actions:
     - theme: brand
-      text: Get Started
-      link: /docs/hachimi/getting-started
+      text: Memulai
+      link: /id/docs/hachimi/getting-started
     - theme: alt
       text: Discord
       link: https://discord.gg/BVEt5FcxEn
     - theme: alt
       text: FAQ
-      link: /docs/hachimi/faqs
+      link: /id/docs/hachimi/faqs
     - theme: alt
-      text: Troubleshooting
+      text: Permasalahan
       link: /docs/hachimi/troubleshooting
     - theme: alt
-      text: Credits
-      link: /credits
+      text: Kredit
+      link: /id/credits
 
 features:
   - icon: 🚀
-    title: Easy to use
-    details: Comes with an installer and convenient in-game GUI. No patching whatsoever. Translations update automatically.
+    title: Mudah digunakan
+    details: Dilengkapi dengan installer dan GUI yang praktis. Terjemahan diperbarui secara otomatis.
   - icon: 🌍
-    title: Multilingual translations
-    details: Indexes translations from different community projects, allowing easy access and source switching. Check credits for a list.
+    title: Translasi multi-bahasa
+    details: Mengindeks terjemahan dari berbagai proyek komunitas, memungkinkan akses mudah dan pergantian sumber. Periksa bagian credits untuk daftar.
   - icon: 📝
-    title: Text augmentation
-    details: Provides specialized text features that help translations feel more natural and improves support for different languages.
+    title: Penyesuaian teks
+    details: Menyediakan fitur teks khusus yang membantu terjemahan terasa lebih alami dan meningkatkan dukungan untuk berbagai bahasa.
   - icon: 🖥️
-    title: Game tweaks
-    details: Includes a number of other features and settings which you can adjust to fit your needs.
+    title: Peningkatan game
+    details: Mencakup sejumlah fitur dan pengaturan lain yang bisa kamu sesuaikan sesuai kebutuhan.
 ---
 
-## About
+## Tentang
 
-Hachimi Edge is a fork of the unmaintained [Hachimi](https://hachimi.leadrdrk.com) mod. It was made to quickly serve issues fixed after the game update on 2025/09/24 to users, and has since incorporated additional features and fixes by various community members. If you are still using the original Hachimi, please uninstall it and install Edge to resolve issues. Should Hachimi's developer return, Edge will likely be merged back and discontinued.
+Hachimi Edge merupakan _fork_ aktif dari mod Hachimi yang sudah tidak lagi dipelihara. 
+Mod ini dibuat untuk segera menangani masalah yang muncul setelah pembaruan game pada 24/09/2025 dengan menggabungkan fitur tambahan serta perbaikan dari berbagai anggota komunitas. Hachimi tidak berfungsi? Kesalahan _runtime_? _Patching_ gagal? Kemungkinan besar kamu masih menggunakan Hachimi versi asli. Hapus instalasi Hachimi lama dan pasang versi Edge baru untuk menyelesaikan masalah. Jika pengembang Hachimi kembali, Edge kemungkinan akan digabung kembali dan dihentikan.
 
-## Translations
 
-Translations are sourced from various community projects. Hachimi provides a framework to modify the game, it does not do any translation itself.
-Check out the sources in more detail on the [credits page](../credits.md).
+## UmaPatcher
 
-## Screenshots {#screenshots}
+UmaPatcher adalah aplikasi bantu untuk mempermudah proses _patch_ Hachimi ke dalam game di Android. Aplikasi ini juga memiliki versi "Edge" yang menerapkan Hachimi Edge. Versi Hachimi Edge terbaru akan otomatis diunduh saat melakukan _patching_, jadi kamu tidak perlu khawatir tentang hal lain di Android.
+
+## Translasi
+
+Sumber terjemahan diindeks dari berbagai proyek komunitas terpisah. Hachimi menyediakan kerangka kerja untuk memodifikasi game, namun tidak melakukan atau mengelola terjemahan itu sendiri, dan tidak ada hubungannya dengan sumber-sumber tersebut. Tidak menemukan terjemahan untuk konten terbaru? Mencari bahasa lain? Hachimi Edge mengindeks lebih banyak repositori yang lebih _up-to-date_ dibandingkan versi asli. Lihat sumber-sumber secara lebih detail di [_laman kredit_](/id/credits.md) untuk informasi umum, progres, bantuan, dan cara menghubungi. Cobalah untuk mendukung para kontributor yang mengerjakannya!
+
+## Tangkapan Layar {#screenshots}
 
 <div class="gallery">
-  <img class="item grid-4" src="/assets/screen1.jpg" alt="Home screen">
-  <img class="item grid-4" src="/assets/screen2.jpg" alt="Training screen">
-  <img class="item grid-4" src="/assets/screen3.jpg" alt="Training event">
-  <img class="item grid-4" src="/assets/screen4.jpg" alt="Main story">
+  <img class="item grid-4" src="/assets/id/screen1.webp" alt="Beranda">
+  <img class="item grid-4" src="/assets/id/screen2.webp" alt="Layar latihan">
+  <img class="item grid-4" src="/assets/id/screen3.webp" alt="Event latihan">
+  <img class="item grid-4" src="/assets/id/screen4.webp" alt="Cerita karakter">
 </div>
