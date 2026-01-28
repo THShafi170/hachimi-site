@@ -6,8 +6,9 @@ UmaTL is actually the first translation patch for the game. It included editing 
 
 1. Install [python 3.13 (64bit)](https://www.python.org/downloads/)
 1. Install [git](https://git-scm.com/)
-1. Create a folder in which you want umatl to be (`D:\uma-tools\umatl` or something)
-1. Open a cmdline in that folder and run:
+1. Create a folder in which you want umatl to be (`D:\uma-tools\umatl` or something). This is the `UmaTL Folder`.
+1. Extract the content of [wheels.zip from releases](https://github.com/UmaTL/hachimi-tl-en/releases/tag/support) into the `UmaTL Folder\wheels` folder.
+1. Open a cmdline in the base `UmaTL Folder` folder and run:
    ```
    git clone https://github.com/noccu/umamusu-translate.git .
    py -m venv .venv
@@ -15,7 +16,6 @@ UmaTL is actually the first translation patch for the game. It included editing 
    py -m pip install -r src\requirements.txt --find-links=wheels/ --prefer-binary
    py -m pip install -r src\devreq.txt --find-links=wheels/ --prefer-binary
    ```
-1. Extract the content of [wheels.zip from releases](https://github.com/UmaTL/hachimi-tl-en/releases/tag/support) into the umatl\wheels folder.
 
 ## Different languages
 
