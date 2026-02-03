@@ -9,11 +9,11 @@ If you run into issues, check out [Troubleshooting](troubleshooting.md).
 
 ::: warning
 The DMM install process uses DotLocal DLL redirection.  
-This is incompatible with some anti-cheats (such as Vanguard used in LoL/Valorant). You'll need to disable it every time you want to play affected games. [Here](https://github.com/LeadRDRK/DotLocalToggle/releases) is a program to quickly toggle it. Run it until it says it has disabled DLL redirection and restart your computer.  
+This is incompatible with some anti-cheats (e.g. Vanguard used in LoL/Valorant) and will need to be disabled every time you want to play affected games. You can use [DotLocalToggle](https://github.com/LeadRDRK/DotLocalToggle/releases) to quickly toggle it. Run it until it says it has disabled DLL redirection and restart your computer.  
 Steam is unaffected.
 :::
 
-1. Download the latest [Installer](https://github.com/kairusds/Hachimi-Edge/releases/latest/download/hachimi_installer.exe) and run it. 
+1. Download the latest [Installer](https://github.com/kairusds/Hachimi-Edge/releases/latest/download/hachimi_installer.exe) and run it.
 1. If you used non-edge Hachimi before, click Uninstall first.
 1. Choose your game version from the lower box.
 1. Check that the install directory is correct and change it if needed.
@@ -31,17 +31,20 @@ Only add the file extensions if you see them on the originals. Windows can hide 
 :::
 
 ### Steam
+
 1. Download the latest `hachimi.dll` from the [Releases page](https://github.com/kairusds/Hachimi-Edge/releases).
 1. Rename it to `cri_mana_vpx.dll` and put it in the [game install folder](faqs#how-do-i-find-the-game-install-folder).
-1. Download Ferns' `FunnyHoney.exe` from [here](https://codeberg.org/LeadRDRK/FunnyHoney).
+1. Download [Ferns' `FunnyHoney.exe`](https://codeberg.org/LeadRDRK/FunnyHoney).
 1. Rename it to `UmamusumePrettyDerby_Jpn.exe` and put it in the game install folder, overwriting the original.
 
 ### DMM
+
 1. Refer to the "Configure the registry" section in [this article](https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-redirection#optional-configure-the-registry) to enable DLL redirection. **Restart** your computer after you're done.
-2. Download the latest `hachimi.dll` from the [Releases page](https://github.com/kairusds/Hachimi-Edge/releases).
-3. In the [game install folder](faqs#how-do-i-find-the-game-install-folder), create a new folder named `umamusume.exe.local` and move the downloaded DLL file there. Rename it to `UnityPlayer.dll`.
-4. Download the latest `cellar.dll` from the [Cellar Releases page](https://github.com/Hachimi-Hachimi/Cellar/releases).
-5. Move it to `umamusume.exe.local` and rename it to `apphelp.dll`.
+1. Download the latest `hachimi.dll` from the [Releases page](https://github.com/kairusds/Hachimi-Edge/releases).
+1. In the [game install folder](faqs#how-do-i-find-the-game-install-folder), create a new folder named `umamusume.exe.local` and move the downloaded DLL file there. Rename it to `UnityPlayer.dll`.
+1. Download the latest `cellar.dll` from the [Cellar Releases page](https://github.com/Hachimi-Hachimi/Cellar/releases).
+1. Move it to `umamusume.exe.local` and rename it to `apphelp.dll`.
+
 </details>
 
 <details>
@@ -87,7 +90,6 @@ You can also try the Shizuku option further down.
 
 ⚠️ You'll need to repeat this process from step 4 whenever the app updates. You do **not** need to uninstall the game to update.
 
-
 <details>
 <summary class="collapsible-header-sub">Patch with Shizuku (alternative, might enable store)</summary>
 
@@ -96,9 +98,10 @@ This functions something like a "rootless direct install" and *could* circumvent
 If you don't see this option, update to the latest version.
 
 Unfamiliar? You will need to enable a few things:
+
 1. First of all, install [Shizuku](https://github.com/RikkaApps/Shizuku/releases).
 1. Go to `Settings > About phone` and tap `Build number` 5 times, or until you get the popup.
-1. Go back to the main system settings to open `Developer options` or search for it. 
+1. Go back to the main system settings to open `Developer options` or search for it.
 1. Enable it (`Use developer options`), then find and enable `Wireless debugging`.
     - You might need to turn `USB debugging` on as well if this doesn't work on its own.
 1. Tap the setting name to open detailed wireless debugging settings.
@@ -106,6 +109,7 @@ Unfamiliar? You will need to enable a few things:
 1. Open Shizuku's main app and start it.
 1. Now Umapatcher Edge's install options should show the Shizuku method as `available`.
 1. When done, it is recommended to stop Shizuku and disable wireless debugging again.
+
 </details>
 
 <details>
@@ -122,13 +126,15 @@ You'll need to patch the game with UmaPatcher again whenever the game updates.
 <summary class="collapsible-header-sub">Manual install (not recommended)</summary>
 
 1. Build or download the prebuilt libraries from the [Releases page](https://github.com/kairusds/Hachimi-Edge/releases).
-2. Extract the APK file of the game. You might want to use [apktool](https://apktool.org/) for this.
-3. Rename the `libmain.so` file in each of the folders inside `lib` to `libmain_orig.so`.
-4. Copy the proxy libraries to their corresponding folders (e.g. `libmain-arm64-v8a.so` goes to `lib/arm64-v8a`). Rename them to `libmain.so`.
-5. Build the APK file and install it.
+1. Extract the APK file of the game. You might want to use [apktool](https://apktool.org/) for this.
+1. Rename the `libmain.so` file in each of the folders inside `lib` to `libmain_orig.so`.
+1. Copy the proxy libraries to their corresponding folders (e.g. `libmain-arm64-v8a.so` goes to `lib/arm64-v8a`). Rename them to `libmain.so`.
+1. Build the APK file and install it.
+
 </details>
 
 ## First Time Setup
+
 Upon launching the game for the first time after installing Hachimi, you should be greeted with this dialog:
 
 ![First Time Setup](/assets/first-time-setup.jpg)

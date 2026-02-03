@@ -39,31 +39,40 @@ This is what the message should look like when you are banned:
 ![First Time Setup](/assets/banned.jpg)
 
 ## Can I play JP and Global simultaneously?
+
 Yes, but you will need to use a workaround if using the DMM version. Check out [these steps](troubleshooting.md#error-501).
 
 ## What is the difference between the Physics Update Modes?
+
 These are modes defined internally by the game, and not implemented by Hachimi. Little is known about them.
-- `ModeNormal` is the default. 
+
+- `ModeNormal` is the default.
 - `Mode60FPS` seems to restore some physics movements when increasing framerate, but can still be a little buggy sometimes.
 - Both `SkipFrame` modes are unknown but seem to be broken.
 
 ## How do I update on Android?
+
 ### Game / Hachimi
+
 Follow the [install steps](getting-started-jp.md#android) from step 4.
 You don't have to import the key again. When updating Hachimi, you can just reinstall the current game version if you still have the file(s).
+
 ### UmaPatcher
+
 1. If you haven't done it before, Settings -> Export signing key.
 1. Uninstall UmaPatcher.
 1. Download & install the latest UmaPatcher.
 1. Settings -> Import signing key.
 
 ## I turned off Hachimi GUI/Overlay, how do I turn it back on?
+
 First of all, you likely did this as a workaround on Android. The issue has been fixed since v0.15.1, so check that you have updated to the latest Hachimi Edge.  
 
 Open Hachimi's config file (config.json) in a text editor and change the `disable_gui` value from `true` to `false`, then restart the game. This config file is located in the `hachimi` folder inside the game's installation folder. On android that is `android/media/jp.co.cygames.umamusume` (might differ with phone brand)  
 If you're uncomfortable with this or run into issues, it's safe to delete the config file as well. Hachimi will recreate a default one.
 
 ## How do I find the game install folder?
+
 **Steam**: Right-click the game in Steam -> Manage -> Browse local files  
 **DMM**: Click the 3 dots next to the game name in DMM -> 🛈 icon -> 📁 icon  
 **Android**: Not accessible, but some data is stored at `Android/media/jp.co.cygames.umamusume`

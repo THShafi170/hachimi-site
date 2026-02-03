@@ -3,6 +3,7 @@
 This page lists the config options and describes what they're used for.
 
 The config file can be found at one of these locations:
+
 - Windows: `[Game install folder]\hachimi\config.json`
 - Android: `/sdcard/Android/media/jp.co.cygames.umamusume/hachimi/config.json`
 
@@ -45,7 +46,8 @@ Editing this file with a basic text editor can result in file corruption. Please
 - `auto_translate_localize`: Allows translating UI text through the auto translator. This is generally NOT recommended since most translators do not properly preserve line breaks or formatting tags.
 - `disabled_hooks`: Manually disable hooks. Don't fiddle with this option, as it serves as a debug tool for troubleshooting compatibility issues.
 
-### Windows only
+## Windows only
+
 - `vsync_count`: The VSync count. Set it to 1 to match your monitor's refresh rate. Refer to the [Unity docs](https://docs.unity3d.com/ScriptReference/QualitySettings-vSyncCount.html) for more info.
 - `load_libraries`: List of libraries to load on startup. Can be used to load other mods. Example: `["applejuicer.dll", "banana.dll"]`
 - `menu_open_key`: The Windows VK code for the key that opens the menu. Default: `39` (Right arrow key). Check [this page](https://cherrytree.at/misc/vk.htm) for a list of all of the keycodes.

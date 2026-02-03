@@ -45,7 +45,7 @@ features:
 
 Hachimi Edge is the third full translation mod for the game, following in the footsteps of UmaTL and Carotene, and the first to fully support game modding on Android.
 
-A fork of the unmaintained Hachimi mod, it began as a way to quickly serve fixes for issues after the game update on 2025/09/24 to users, and has since incorporated additional features and fixes by various community members. 
+A fork of the unmaintained Hachimi mod, it began as a way to quickly serve fixes for issues after the game update on 2025/09/24 to users, and has since incorporated additional features and fixes by various community members.
 The original Hachimi mod has been officially discontinued by its developer on 2026/01/17. Hachimi Edge will take its place.
 
 Hachimi not working? Runtime errors? Patching failed? You are likely still using the original Hachimi. Uninstall it and [install](/docs/hachimi/getting-started) the new Edge version to resolve issues.

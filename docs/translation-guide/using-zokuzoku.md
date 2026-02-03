@@ -1,4 +1,5 @@
 # Using ZokuZoku
+
 ZokuZoku is a Visual Studio Code extension which helps create and modify translations for Hachimi through a GUI with multiple nifty features. It allows you to work on translations without having to edit the JSON dict files directly.
 
 ::: warning
@@ -6,17 +7,22 @@ Since a game update, ZokuZoku no longer supports dialogue content. Check out the
 :::
 
 ## Installation
+
 ### Prerequisites
+
 Before installing ZokuZoku, make sure to have these installed:
+
 - OS: Windows 10+ or Linux x64. macOS and ARM devices are not officially supported but might work with some special setup.
 - [Visual Studio Code](https://code.visualstudio.com/) v1.90 or later (not Visual Studio, they are two completely different things!)
 
 The following files are required by ZokuZoku:
+
 - `master.mdb` and `meta`: These files are located within the game's data directory (on Windows this is in AppData, and on Android this is in `/data/data`, root access required). These two files must be in the same folder, with the `meta` file in the root and `master.mdb` in a subfolder named `master`, so that we have `folder/meta` and `folder/master/master.mdb`. **If you have UM:PD installed from DMM on your system, you don't need to worry about these files, ZokuZoku can automatically detect them!**
 - `localize_dump.json`: This file contains the original `localize_dict` data dumped from the game. Hachimi can be used to create this file:
+
 1. Enable "Translator mode" in the config editor.
 ![Config editor](/assets/translation-guide/using-zokuzoku/1.webp)
-2. A new option called "Dump localize dict" will appear under the Translation section in the menu. Click on it to create the file.
+1. A new option called "Dump localize dict" will appear under the Translation section in the menu. Click on it to create the file.
 ![Translation section in menu](/assets/translation-guide/using-zokuzoku/2.webp)
 
 ZokuZoku will also automatically detect this file if it was created using the DMM version of the game, following the procedure above, so make sure to do it at least once before installing. You'll need to dump it again whenever the game client updates if you want to keep it updated, otherwise if you don't work on UI translations, you could ignore it.
@@ -24,11 +30,13 @@ ZokuZoku will also automatically detect this file if it was created using the DM
 And of course, you'll also need an existing translation repository to work with. Check out [the current ones](/credits) or make your own.
 
 ### Installing
+
 Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=LeadRDRK.zokuzoku) or download the .vsix file for the latest version on the [Releases](https://github.com/Hachimi-Hachimi/ZokuZoku/releases) page, open the Extensions panel in VSCode, click on the 3 dots button on the top right, choose "Install from VSIX..." and select the file you just downloaded.
 
 ![Translation section in menu](/assets/translation-guide/using-zokuzoku/3.webp)
 
 ## Initial setup
+
 After installing ZokuZoku, you can now open the translation repo by going to File -> Open Folder... and select the folder you want to open. *Note that it should be a folder that contains the `localized_data` folder, not the `localized_data` folder itself!*
 
 Upon opening a TL repo for the first time (where ZokuZoku has been configured to automatically activate), the following prompt will be shown:
@@ -56,6 +64,7 @@ You'll need to restart Visual Studio Code after changing the data paths.
 And that's all! You're now ready to make some translations!
 
 ## Main panel
+
 You may have noticed that a new icon has been added to your sidebar after you've installed the extension. This is the ZokuZoku panel, the main interface to navigate through the translatable assets and launch the editor.
 
 ![Main panel](/assets/translation-guide/using-zokuzoku/9.webp)
@@ -66,6 +75,7 @@ Some of these views will display a checkbox next to the entries' name. It tells 
 ![Lyrics view with checkboxes](/assets/translation-guide/using-zokuzoku/10.webp)
 
 ## Switching translation folder
+
 The first thing you might want to do before editing anything is to switch the Hachimi translation folder (also known as the localized data directory) to your local working copy of the translations. This will make Hachimi load translations from your local copy instead of the upstream repo so you can preview them in-game if needed.
 
 To do this, open the "Hachimi Controls" view in the panel. Click on the "Set translation folder" button to set it. When you're done working on the translations, remember to click on the "Revert translation folder" button to revert it.
@@ -73,7 +83,9 @@ To do this, open the "Hachimi Controls" view in the panel. Click on the "Set tra
 ![Hachimi Controls view](/assets/translation-guide/using-zokuzoku/26.webp)
 
 ## Editors
+
 ### Annoying quirk
+
 Before we even go into main interface of the editors, let's quickly cover a huge quirk of it. Try opening any of the assets that haven't been translated yet (with the checkbox next to their name unchecked). Something weird happens when the editor is opened.
 
 ![through the magic of buying two of them](/assets/translation-guide/using-zokuzoku/11.webp)
@@ -89,6 +101,7 @@ Luckily, this quirk is mostly painless if you get yourself used to a specific wo
 - If you do wanna translate it, **save the file first**, the custom editor will close (another weird quirk!), but now you can close the text editor and reopen the asset from the panel. Everything will now work as expected.
 
 ### Common interface
+
 Most of the editors share the exact same interface with similar behavior.
 
 ![MDB editor](/assets/translation-guide/using-zokuzoku/12.webp)
@@ -114,6 +127,7 @@ Besides navigation, the Explorer also offers a few extra features:
 While the search function is being used, a virtual view will be used to display the matched entries. Arrow keys navigation will not work here. Empty the search bar to go back to the normal view.
 
 On the panel's title, there are 3 buttons, from left to right:
+
 - **The Copy button** allows you to arm entries for copying. When you click on it with one or more entries selected, those entries will now display a dashed border around them. This indicates that they've been armed for copying. Clicking on it again (with no entries selected) will clear their copying status.
 - **The Paste / Fill button** will **paste** or **fill** the entries that are being copied onto the currently selected entries.
 - **The Clear button** clears the translated content of the currently selected entries.
@@ -144,11 +158,13 @@ This filling behavior does not apply to text slots. If the destination has more 
 :::
 
 ### Story editor
+
 The story editor is an extended version of the common editor with extra features for story translations. It is used for main/character/event stories, home dialogues and training dialogues.
 
 ![Story editor](/assets/translation-guide/using-zokuzoku/20.webp)
 
 #### Navigation
+
 Arrow keys navigation serves an important purpose here. The Down arrow key will lead you to the next block within that story, which is not necessarily the next entry in the list.
 
 For example, take a look at this story which has separate blocks for male and female trainers.
@@ -162,6 +178,7 @@ The Up arrow works normally here, but keep in mind that it will not follow the o
 It's highly recommended that you use the arrow keys to go through the story dict in the correct order. You should get yourself used to the Alt + Arrow key combination to make it easier.
 
 #### Preview panels
+
 The most obvious addition to the editor is the two extra panels on the right side and the extra buttons on their parent panels:
 
 ![Preview panels](/assets/translation-guide/using-zokuzoku/22.webp)
@@ -181,11 +198,14 @@ The text elements in the preview panels are "virtual" text slots. For the transl
 :::
 
 #### Original panel actions
+
 In addition to the preview buttons, the Original panel has 2 extra buttons, from left to right:
+
 - **The Goto block button** sends an IPC command to Hachimi to skip to a specific story block in game. For this to work, you need to have "Enable IPC" enabled in the Hachimi config, and you must also be viewing the story you're currently translating in the game. Useful for double checking if everything looks correct in-game.
 - **The Play voice clip button** plays the voice clip for the current story block. This will only work for stories that are voice acted.
 
 #### Text slots
+
 Except for the "Title" entry, all entries within a story have at least 2 text slots: the speaker name and the dialogue content. Depending on the story block that an entry represents, there might be extra text slots for dialogue choices and colored text.
 
 Choice text slots have a "link" assigned to them. Try hovering over them in the Original view or the preview panels; you'll notice that the text becomes underlined, indicating that it is a text slot with a link to another entry. You can press Ctrl + Left click to follow this link, which goes to the story block that this choice will lead to.
@@ -209,15 +229,19 @@ The last type of text slots is the color text slots. They're used to mark sectio
 They are placed after all of the other text slots. The first substring in the content that matches the color text chunk will be colored. The preview panel shows how this works, but note that the color is only for referencing purposes only, it might not match the actual color that's used in-game. Make sure to follow the order as they appear in the Original view to correctly match up the colors.
 
 ## Inner workings
-*TODO*
+
+<!-- TODO -->
 
 ## Advanced usage
+
 ### Reopen a file in ZokuZoku
+
 Sometimes you might need to open a dict file directly instead of opening it through the ZokuZoku panel. This will launch the built-in text editor instead, so you'll need to reopen it in ZokuZoku's custom editor.
 
 Open the VSCode command bar (Ctrl+Shift+P) and execute the "Reopen editor with..." command. Choose the suitable editor from ZokuZoku for your current dict file.
 
 ### Live text editor split view
+
 You can have the text editor and the custom editor open at the same time to view your changes to the actual file in real-time. This is also a good demonstration of how it works internally.
 
 Press Ctrl+\ to open the split view. While focused on the second view, open the VSCode command bar (Ctrl+Shift+P) and execute the "Reopen editor with..." command. Choose the built-in text editor.

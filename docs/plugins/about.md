@@ -2,7 +2,7 @@
 title: About
 ---
 
-# Plugins
+# Plugins <!-- markdownlint-disable-line MD025 -->
 
 Hachimi supports a plugin system that allows developers to extend its functionality through dynamic libraries. Plugins can hook into the game, modify behavior, add GUI elements, and much more.
 

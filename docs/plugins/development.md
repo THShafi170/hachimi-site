@@ -87,7 +87,7 @@ pub extern "C" fn hachimi_init(vtable: *const Vtable, version: i32) -> InitResul
 
 The vtable is a structure containing function pointers to Hachimi's API. You receive it in `hachimi_init` and should store it for use throughout your plugin.
 
-**Current API Version: 2**
+**Current API Version: 2** <!-- markdownlint-disable-line MD036 -->
 
 Always check the version parameter to ensure compatibility:
 

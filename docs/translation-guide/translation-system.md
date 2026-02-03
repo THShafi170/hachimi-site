@@ -1,4 +1,5 @@
 # Translation system
+
 Before getting into the process of making translations, let's have a look at how Hachimi handles translations in the first place. You don't need to fully understand everything that's being explained here, but it's a good idea to have a brief understanding of how things work so you wouldn't be confused while making your translations.
 
 ::: info
@@ -6,6 +7,7 @@ If you also want to know how the translation dicts are formatted/organized, you 
 :::
 
 ## Localize dict / Hashed dict
+
 In the root of the `localized_data` directory, you'll find two files named `localize_dict.json` and `hashed_dict.json`. These two files are for two different systems that serves the same purpose: UI translations.
 
 The localize dict is the new and preferred way of translating the UI which was introduced in Hachimi. This system directly modifies the game's internal localization system, hence the name, which will ensure that translations will go exactly where they need to be, context and all. Each translation entry is mapped to an internal ID within the game, which also loosely specifies the context that they're used in (however there are some cases where the same ID is used inappropriately in multiple contexts, blame Cy devs).
@@ -13,6 +15,7 @@ The localize dict is the new and preferred way of translating the UI which was i
 The hashed dict is a legacy system that was inherited from previous translation projects. This is essentially a word lookup table; anything on the UI that matches a hash within that table will be replaced with the specified translation content. Its usage in previous translation projects has shown that it's particularly *intrusive*, inefficient and often results in low quality translations since they could appear in the wrong places (such as the story dialogues). However, it still has its use, albeit limited, since sometimes the translation target isn't available in the localize dict or any other easily accessible means of translation. *This dict is not supported in ZokuZoku.*
 
 ## MDB dicts
+
 MDB refers to `master.mdb`, a database file used by the game that contains a plethora of various types of data. Hachimi's translation system only concerns 4 tables within this database that are used for textual content: `text_data`, `character_system_text`, `race_jikkyo_comment` and `race_jikkyo_message`. Each of them have their own associated dict with the corresponding name in the root of `localized_data`.
 
 - `text_data` contains textual information for all entities within the game, which includes but is not limited to: character names/profiles, support card names/descriptions, story names, gacha names/descriptions, mission names, etc.
@@ -22,6 +25,7 @@ MDB refers to `master.mdb`, a database file used by the game that contains a ple
 - `race_jikkyo_comment` and `race_jikkyo_message` contains race commentary.
 
 ## Asset dicts
+
 There are 5 asset dict types:
 
 - Story dict (used for the main story, training event dialogue and home screen interactions): `assets/story/data/??/????/storytimeline_*.json` and `assets/home/data/?????/??/hometimeline_*.json`;
@@ -39,6 +43,7 @@ This protection system currently doesn't work anymore.
 The `atlas` type only serves as metadata for the atlas textures (see below). The `uianimation` type usually does the same for other textures, but can sometimes contain text data used by the game.
 
 ## Texture replacements
+
 Texture replacements are categorized by the type of the root asset from which the texture was loaded. For most texture types, a `.png` file would be used for replacement. They are split into their respective directories:
 
 - `atlas`: Contains the atlas textures for UI sprites. Metadata is provided by the atlas metadata dict which has the same name as the replacement texture but as a `.json` file. Path: `assets/atlas/*/*.png`.
@@ -48,11 +53,13 @@ Texture replacements are categorized by the type of the root asset from which th
 All textures can also be replaced using a `.diff.png` file instead of its original format. This is a special format based on PNG which only contains the difference data between the original image and a replacement image, saving considerably on file size. It is highly recommended to use only this format in a tl repo.
 
 ## Movies (videos / FMV cutscenes)
+
 They are USM formatted video files. Replacement of these assets is simply done by making the game load the replacement file.
 
 Path: `assets/movies/*`
 
 ## Translation loading process
+
 The config file, localize dict, hashed dict and MDB dicts are all loaded immediately when the game starts; these are also the only things that will be reloaded when you choose to reload the localized data. Everything else related to game assets will be (re)loaded every time the game tries to load the corresponding asset.
 
 ~~Asset dicts will check for the bundle hash before they're applied. If the bundle hash doesn't match the one that's specified in the dict, it will ignore that file. If the bundle hash isn't specified in the asset dict, this check will be skipped.~~ Currently not working.

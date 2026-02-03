@@ -9,7 +9,7 @@ UmaTL is actually the first translation patch for the game. It included editing 
 1. Create a folder in which you want umatl to be (`D:\uma-tools\umatl` or something). This is the `UmaTL Folder`.
 1. Extract the content of [wheels.zip from releases](https://github.com/UmaTL/hachimi-tl-en/releases/tag/support) into the `UmaTL Folder\wheels` folder.
 1. Open a cmdline in the base `UmaTL Folder` folder and run:
-   ```
+   ``` bat
    git clone https://github.com/noccu/umamusu-translate.git .
    py -m venv .venv
    .venv\Scripts\activate.bat
@@ -67,7 +67,7 @@ See [converting](#converting-to-hachimi-format) for how to obtain Hachimi format
 | Ctrl+d                     | toggle raw<->formatted text                                                   |
 | Ctrl+shift+up/down         | move line up/down                                                             |
 | Ctrl+h                     | listen to current block (game not needed)                                     |
-| Ctrl+space                 | Activate autocomplete (Can click or use keys + enter to navigate and choose) |
+| Ctrl+space                 | Activate autocomplete (Can click or use keys + enter to navigate and choose)  |
 
 ### Spell checking & Autocomplete
 

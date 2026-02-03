@@ -1,4 +1,5 @@
 # Getting started
+
 <small>
 
 View this page in other languages:  
@@ -20,6 +21,7 @@ Existing Hachimi user? You will need to change to Hachimi Edge due to a big game
 ⚠️ Please check before installing.
 
 ### Windows
+
 | Version | Supported |
 | --- | :---: |
 | JP (DMM) | ✅ |
@@ -39,12 +41,14 @@ Existing Hachimi user? You will need to change to Hachimi Edge due to a big game
 | CN | ⚠️ | ⚠️ | ✅ |
 | Global | ❌️ | ❌️ | ❌ |
 
+<!-- markdownlint-disable MD033 -->
 <small>
 ✅ - Fully supported.<br>
 ⚠️ - Technically works, but causes the game to fail due to external factors.<br>
 ❔ - Untested. Might work, but don't count on it.<br>
 ❌ - Not supported.<br>
 </small>
+<!-- markdownlint-enable MD033 -->
 
 ## [Installation guide for JP](getting-started-jp.md)
 
