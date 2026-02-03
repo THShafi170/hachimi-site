@@ -47,6 +47,10 @@ img {
     font-weight: 600;
 }
 
+.vp-doc li + li {
+    margin-top: 4px;
+}
+
 @media (min-width: 640px) {
     :root {
         --vp-home-hero-image-filter: blur(56px);
