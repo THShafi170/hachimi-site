@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Hachimi Edge"
-  text: "Mod terjemahan dan peningkatan game UM:PD"
+  text: "Mod terjemahan dan peningkatan UM:PD"
   tagline: Untuk Windows dan Android.
   image:
     src: /assets/logo.png
@@ -21,7 +21,7 @@ hero:
       link: /id/docs/hachimi/faqs
     - theme: alt
       text: Permasalahan
-      link: /docs/hachimi/troubleshooting
+      link: /id/docs/hachimi/troubleshooting
     - theme: alt
       text: Kredit
       link: /id/credits
@@ -32,7 +32,7 @@ features:
     details: Dilengkapi dengan installer dan GUI yang praktis. Terjemahan diperbarui secara otomatis.
   - icon: 🌍
     title: Translasi multi-bahasa
-    details: Mengindeks terjemahan dari berbagai proyek komunitas, memungkinkan akses mudah dan pergantian sumber. Periksa bagian credits untuk daftar.
+    details: Mengindeks terjemahan dari berbagai proyek komunitas, memungkinkan akses mudah dan pergantian sumber. Periksa bagian kredit untuk daftar.
   - icon: 📝
     title: Penyesuaian teks
     details: Menyediakan fitur teks khusus yang membantu terjemahan terasa lebih alami dan meningkatkan dukungan untuk berbagai bahasa.
@@ -43,8 +43,12 @@ features:
 
 ## Tentang
 
+Hachimi Edge adalah mod terjemahan pihak ketiga untuk game, mengikuti jejak UmaTL dan Carotene, sekaligus yang pertama mendukung modding game secara penuh di Android.
+
 Hachimi Edge merupakan *fork* aktif dari mod Hachimi yang sudah tidak lagi dipelihara.
-Mod ini dibuat untuk segera menangani masalah yang muncul setelah pembaruan game pada 24/09/2025 dengan menggabungkan fitur tambahan serta perbaikan dari berbagai anggota komunitas. Hachimi tidak berfungsi? Kesalahan *runtime*? *Patching* gagal? Kemungkinan besar kamu masih menggunakan Hachimi versi asli. Hapus instalasi Hachimi lama dan pasang versi Edge baru untuk menyelesaikan masalah. Jika pengembang Hachimi kembali, Edge kemungkinan akan digabung kembali dan dihentikan.
+Mod ini dibuat untuk segera menangani masalah yang muncul setelah pembaruan game pada 24/09/2025 dengan menggabungkan fitur tambahan serta perbaikan dari berbagai anggota komunitas. Mod Hachimi asli telah resmi dihentikan oleh pengembangnya pada 17/01/2026. Hachimi Edge akan mengambil alih posisinya.
+
+Hachimi tidak berfungsi? Kesalahan *runtime*? *Patching* gagal? Kemungkinan besar kamu masih menggunakan Hachimi versi asli. Hapus instalasi Hachimi lama dan [pasang](/id/docs/hachimi/getting-started.md) versi Edge baru untuk menyelesaikan masalah.
 
 ## UmaPatcher
 
@@ -52,7 +56,11 @@ UmaPatcher adalah aplikasi bantu untuk mempermudah proses *patch* Hachimi ke dal
 
 ## Translasi
 
-Sumber terjemahan diindeks dari berbagai proyek komunitas terpisah. Hachimi menyediakan kerangka kerja untuk memodifikasi game, namun tidak melakukan atau mengelola terjemahan itu sendiri, dan tidak ada hubungannya dengan sumber-sumber tersebut. Tidak menemukan terjemahan untuk konten terbaru? Mencari bahasa lain? Hachimi Edge mengindeks lebih banyak repositori yang lebih *up-to-date* dibandingkan versi asli. Lihat sumber-sumber secara lebih detail di [*laman kredit*](/id/credits.md) untuk informasi umum, progres, bantuan, dan cara menghubungi. Cobalah untuk mendukung para kontributor yang mengerjakannya!
+Sumber terjemahan diindeks dari berbagai proyek komunitas terpisah. Hachimi menyediakan kerangka kerja untuk memodifikasi game, namun tidak melakukan atau mengelola terjemahan itu sendiri, dan tidak ada hubungannya dengan sumber-sumber tersebut.
+
+Tidak menemukan terjemahan untuk konten terbaru? Mencari bahasa lain? Hachimi Edge mengindeks lebih banyak repositori yang lebih baru dibandingkan versi asli.
+
+Lihat sumber-sumber secara lebih detail di [*laman kredit*](/id/credits.md) untuk informasi umum, progres, bantuan, dan cara menghubungi. Cobalah untuk mendukung para kontributor yang mengerjakannya!
 
 ## Tangkapan Layar {#screenshots}
 

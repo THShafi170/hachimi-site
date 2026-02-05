@@ -1,3 +1,3 @@
 ---
-title: Panduan translasi
+title: Panduan Translasi
 ---

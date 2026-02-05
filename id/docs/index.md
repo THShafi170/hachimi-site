@@ -1,22 +1,26 @@
 # Dokumentasi
 
 Selamat datang di halaman dokumentasi Hachimi Edge!
-
-::: Peringatan!
-Peringatan! Proyek ini tidak sesuai dengan Ketentuan layanan/Terms of Service (TOS) dari game. Apabila diketahui oleh developer, besar kemungkinan proyek ini akan dihapus. Gunakan dengan penuh kesadaran akan risiko sendiri. Mohon distribusikan nama dan tautan dengan penuh tanggung jawab, dan hindari membagikannya di ruang publik yang bisa memicu perhatian developer
-:::
+Lihat semua topik yang tersedia di bilah sisi (sidebar) sebelah kiri. Untuk pengguna perangkat seluler, kamu bisa menemukannya di menu pada bagian kiri atas.
 
 ## Memasang Hachimi
 
 Silakan cek halaman [Memulai](/id/docs/hachimi/getting-started).
 
+## Penggunaan Plugin
+
+Hachimi Edge mendukung [sistem plugin](/id/docs/plugins/about) agar bisa memperluas fungsionalnya.
+
 ## Berkontribusi Sebagai Translator
 
-Silakan cek halaman [Panduan Translasi](/id/docs/translation-guide/welcome) dan menghubungi [salah satu kontributor](/id/credits.md).
+Hachimi Edge membutuhkan penerjemah untuk UI, situs/dokumentasi, dan dukungan pengguna. Jika kamu ingin membantu, silakan bergabung ke [Discord](https://discord.gg/hachimimod) dan panggil/mention `Developer`.
+Untuk situs ini, kamu bisa berkontribusi langsung ke [repositori GitHub](https://github.com/UmaTL/hachimi-site).
+
+Untuk membantu terjemahan game, silakan pelajari [Panduan Translasi](/id/docs/translation-guide/welcome) dan hubungi [salah satu kontributor proyek](/id/credits.md).
 
 ## Buat Sumber Translasimu Sendiri
 
-Ikuti salah satu proyek yang sudah ada sebagai referensi dan ajukan proyekmu [disini](https://github.com/UmaTL/hachimi-meta).
+Setelah kamu memahami [Panduan Translasi](/id/docs/translation-guide/welcome), pelajari cara [konfigurasi repo](/id/docs/translation-guide/repo-config) dan kirimkan proyek kamu ke indeks [Hachimi Edge](https://github.com/UmaTL/hachimi-meta). Kamu bisa melihat [salah satu proyek](/id/credits.md) yang sudah ada sebagai referensi.
 
 ## Berkontribusi Ke Hachimi Edge
 
