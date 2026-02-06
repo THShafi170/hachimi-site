@@ -254,7 +254,7 @@ Mulai ulang perangkat kamu dan coba jalankan game lagi. Jika kesalahan tetap mun
 
 ### *Crash* setelah dijalankan
 
-:::warning PERINGATAN
+::: warning PERINGATAN
 Ini **TIDAK** berkaitan dengan masalah *crash* yang terjadi pada Hachimi versi lama (v0.14.1).
 Lihat [panduan ini](faqs.md#bagaimana-saya-memperbarui-di-android) untuk memperbarui Hachimi.
 :::
@@ -279,7 +279,7 @@ Masalah ini telah diperbaiki di Hachimi Edge versi 0.15.1. Pastikan kamu telah [
 <details>
 <summary class="collapsible-header-sub">Saya mengalami hal ini pada versi yang lebih baru dari 0.15.1.</summary>
 
-:::tip
+::: tip
 Mematikan GUI akan menonaktifkan pembaruan terjemahan. Kamu harus sesekali menyalakannya dan mematikannya lagi untuk memperbaruinya.
 :::
 

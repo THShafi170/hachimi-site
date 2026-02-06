@@ -76,7 +76,7 @@ Steam tidak terpengaruh.
 <details>
 <summary class="collapsible-header-sub">Instal manual</summary>
 
-:::tip
+::: tip
 Hanya tambahkan ekstensi file jika kamu melihatnya pada file asli. Windows dapat menyembunyikan ekstensi tersebut, dan jika kamu mengganti namanya (dengan ekstensi ganda), hal itu akan merusak game. Ketentuan ini tidak berlaku untuk folder.
 :::
 
@@ -200,7 +200,7 @@ Sejak 2025/11/11, Semua versi menggunakan rilis Hachimi Edge yang sama.
 <summary class="collapsible-header-sub">Instal manual</summary>
 Instalasi manual juga mudah, jika kamu lebih suka mengalami masalah.
 
-:::tip
+::: tip
 Hanya tambahkan ekstensi `.dll` saat mengganti nama file jika kamu melihatnya pada nama file asli. Jika tidak terlihat, berarti Windows sedang menyembunyikan ekstensi file tersebut; jika kamu tetap menambahkannya, nama file akan berakhir menjadi `.dll.dll` dan menyebabkan game tidak bisa dijalankan.
 :::
 
@@ -221,7 +221,7 @@ Bagian ini bersifat historis dan hanya boleh digunakan jika versi game kamu belu
 <details>
 <summary class="collapsible-header-sub">Instal manual metode lama</summary>
 
-:::tip
+::: tip
 Hanya tambahkan ekstensi `.dll` saat mengganti nama jika kamu melihatnya pada nama file asli. Jika tidak terlihat, berarti Windows sedang menyembunyikan ekstensi file tersebut; jika kamu tetap menambahkannya, nama file akan berakhir menjadi `.dll.dll` dan menyebabkan game tidak bisa dijalankan.
 :::
 
